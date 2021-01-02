@@ -47,6 +47,32 @@ The simulation can be performed either by a solution of kinetic equations for de
 - [Documentation](#documentation)
 - [Support](#support)
 
+
+---
+
+## Libraries
+
+- #include<stdio.h>
+- #include<stdlib.h>
+- #include<math.h>
+- #include<time.h>
+- #include <sys/time.h>
+- #include <mpi.h>
+- #include <string.h>
+
+---
+
+## MPI Command
+
+- MPI_Init(NULL,NULL); 
+- MPI_Comm_rank(MPI_COMM_WORLD,&my_rank); 
+- MPI_Comm_size(MPI_COMM_WORLD,&comm_sz);.
+- MPI_Barrier(MPI_COMM_WORLD);
+- MPI_Reduce(&local_len,&len,1,MPI_DOUBLE,MPI_MIN,0,MPI_COMM_WORLD); 
+- MPI_Bcast(&d_len,1,MPI_DOUBLE,0,MPI_COMM_WORLD);
+- MPI_Gather(local_i,point_number,MPI_INT,buf,point_number,MPI_INT,0,MPI_COMM_WORLD); 
+- MPI_Finalize();
+
 ---
 
 ## Connect to n-node
