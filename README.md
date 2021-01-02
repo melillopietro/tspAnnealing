@@ -52,7 +52,7 @@ The simulation can be performed either by a solution of kinetic equations for de
 
 ## Connect to n-node
 
-ssh compute-0-n
+`ssh compute-0-n`
 
 --- 
 
