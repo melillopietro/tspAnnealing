@@ -43,14 +43,22 @@ The simulation can be performed either by a solution of kinetic equations for de
 
 ## Table of Contents 
 
-- [Installation](#installation)
 - [Features](#features)
 - [Documentation](#documentation)
 - [Support](#support)
 
 ---
 
-## Run
+## Building
+
+- **sequential** : 
+- **parallel** : 
+
+---
+
+---
+
+## Running
 
 - **sequential** : ./tsp_Sequential
 - **parallel** : mpirun -np 64 ./tsp_MPI
