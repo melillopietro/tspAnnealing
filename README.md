@@ -71,6 +71,23 @@ The simulation can be performed either by a solution of kinetic equations for de
 - **parallel** : `mpirun -np 64 ./tsp_MPI`
 - **parallel with machine file** : `mpirun -np 128 -machinefile machine_file_0123.txt ./tsp_MPI`
 
+---
+
+--- 
+
+## Options
+
+### Machine File
+- **parallel with machine file** : `mpirun -np 128 -machinefile machine_file_0123.txt ./tsp_MPI`
+
+### Networking
+- **TCP/IP over Ethernet**  : `mpirun --mca btl self,tcp --mca btl_tcp_if_include em2 [args] ./myexec`
+- **TCP/IP over Infiniband**  : `mpirun --mca btl self,tcp --mca btl_tcp_if_include ib0 [args] ./myexec`
+- **Native Infiniband**  : `mpirun --mca btl self,openib [args] ./myexec`
+
+### MPE
+- **Generate .clog2**  : `mpecc -mpilog -lpthread –o myexec mysrc.c mpirun [args] ./myexec`
+
 
 
 ---
@@ -83,24 +100,24 @@ The simulation can be performed either by a solution of kinetic equations for de
 
 
 > **Front-end** : 
-• 2 x Xeon (2.00 GHz)
-• Memory (RAM) 8 GB
-• Disk da 512 GB
+- 2 x Xeon (2.00 GHz)
+- Memory (RAM) 8 GB
+- Disk da 512 GB
 
 > **Computational node** : 
-• 2 processori Xeon (3.40 GHz)
-• 8 core fisici a processore
-• 16 core per ogni macchina in totale
-• Memoria (RAM) 64 GB
-• Disco da 1 TB
-• Su alcuni nodi è abilitato l’Hyper-Threading
+- 2 processori Xeon (3.40 GHz)
+- 8 core fisici a processore
+- 16 core per ogni macchina in totale
+- Memoria (RAM) 64 GB
+- Disco da 1 TB
+- Su alcuni nodi è abilitato l’Hyper-Threading
 
-> **Distro:** Rocks 7.0 (Manzanita) x86_64 is based upon CentOS 7.4 with all updates available as of 1 Dec 2017.
+> **OS:** Rocks 7.0 (Manzanita) x86_64 is based upon CentOS 7.4 with all updates available as of 1 Dec 2017.
 data avaible at: `http://www.rocksclusters.org/downloads/2017-12-01-download-rocks-7-0-manzanita.html  `
 
 > **Networking:**
-• Fast Ethernet -100 Mb/s
-• InfiniBand - 56 Gb/sec
+- Fast Ethernet -100 Mb/s
+- InfiniBand - 56 Gb/sec
 ---
 
 ## Support
