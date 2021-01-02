@@ -69,7 +69,6 @@ The simulation can be performed either by a solution of kinetic equations for de
 
 - **sequential** : `./tsp_sequential`
 - **parallel** : `mpirun -np 64 ./tsp_MPI`
-- **parallel with machine file** : `mpirun -np 128 -machinefile machine_file_0123.txt ./tsp_MPI`
 
 ---
 
@@ -87,7 +86,7 @@ The simulation can be performed either by a solution of kinetic equations for de
 
 ### MPE
 - **Generate .clog2**  : `mpecc -mpilog -lpthread –o myexec mysrc.c mpirun [args] ./myexec`
-
+- **Vievwer .slog** : `https://www.mcs.anl.gov/research/projects/perfvis/software/viewers/index.htm`
 
 
 ---
