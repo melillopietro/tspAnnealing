@@ -2,8 +2,6 @@
 
 
 
-![TSP](https://www.researchgate.net/profile/Israel_Agbehadji2/publication/301325477/figure/fig3/AS:667721079484426@1536208519369/Traveling-Salesman-Problem.png)
-
 
 ---
 
@@ -13,6 +11,7 @@
 
 ## the traveling salesman problem 
 
+![TSP](https://www.researchgate.net/profile/Israel_Agbehadji2/publication/301325477/figure/fig3/AS:667721079484426@1536208519369/Traveling-Salesman-Problem.png)
 
 The travelling salesman problem (also called the traveling salesperson problem or TSP) asks the following question: "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city exactly once and returns to the origin city?" It is an NP-hard problem in combinatorial optimization, important in theoretical computer science and operations research.
 
@@ -74,7 +73,7 @@ The simulation can be performed either by a solution of kinetic equations for de
 
 --- 
 
-## Options
+## Running Options
 
 ### Machine File
 - **parallel with machine file** : `mpirun -np 128 -machinefile machine_file_0123.txt ./tsp_MPI`
@@ -120,8 +119,6 @@ data avaible at: `http://www.rocksclusters.org/downloads/2017-12-01-download-roc
 ---
 
 ## Support
-
-Reach out to me at one of the following places!
 
 - Email at `girolamo.musto@gmail.com`</a>
 - Email at `melillo.pietro@gmail.com`</a>
