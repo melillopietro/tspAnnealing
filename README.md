@@ -79,12 +79,28 @@ The simulation can be performed either by a solution of kinetic equations for de
 
 ---
 
-## Documentation
+## Execution environment for MPI  (Front-end + 4 nodi computazionali)
 
-> Unity version: 2019.3.4f1 
 
-> Android target: 
+> **Front-end** : 
+• 2 x Xeon (2.00 GHz)
+• Memory (RAM) 8 GB
+• Disk da 512 GB
 
+> **Computational node** : 
+• 2 processori Xeon (3.40 GHz)
+• 8 core fisici a processore
+• 16 core per ogni macchina in totale
+• Memoria (RAM) 64 GB
+• Disco da 1 TB
+• Su alcuni nodi è abilitato l’Hyper-Threading
+
+> **Distro:** Rocks 7.0 (Manzanita) x86_64 is based upon CentOS 7.4 with all updates available as of 1 Dec 2017.
+data avaible at: `http://www.rocksclusters.org/downloads/2017-12-01-download-rocks-7-0-manzanita.html  `
+
+> **Networking:**
+• Fast Ethernet -100 Mb/s
+• InfiniBand - 56 Gb/sec
 ---
 
 ## Support
