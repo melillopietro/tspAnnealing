@@ -1,6 +1,7 @@
 # Travelling Salesman Problem with Aanealing algorithm
 
 
+
 ![TSP](https://www.researchgate.net/profile/Israel_Agbehadji2/publication/301325477/figure/fig3/AS:667721079484426@1536208519369/Traveling-Salesman-Problem.png)
 
 
@@ -60,8 +61,8 @@ The simulation can be performed either by a solution of kinetic equations for de
 
 ## Running
 
-- **sequential** : ./tsp_Sequential
-- **parallel** : mpirun -np 64 ./tsp_MPI
+- **sequential** : `./tsp_Sequential`
+- **parallel** : `mpirun -np 64 ./tsp_MPI`
 
 ---
 
