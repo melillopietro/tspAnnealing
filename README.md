@@ -50,10 +50,16 @@ The simulation can be performed either by a solution of kinetic equations for de
 
 ---
 
+## Connect to n-node
+
+ssh compute-0-n
+
+--- 
+
 ## Building
 
-- **sequential** : 
-- **parallel** : 
+- **sequential** : ` gcc tsp_sequential.c -o tsp_sequential -std=gnu99 -lm `
+- **parallel** : ` mpicc -o tsp_MPI tsp_MPI.c -lm `
 
 ---
 
@@ -61,8 +67,11 @@ The simulation can be performed either by a solution of kinetic equations for de
 
 ## Running
 
-- **sequential** : `./tsp_Sequential`
+- **sequential** : `./tsp_sequential`
 - **parallel** : `mpirun -np 64 ./tsp_MPI`
+- **parallel with machine file** : `mpirun -np 128 -machinefile machine_file_0123.txt ./tsp_MPI`
+
+
 
 ---
 
