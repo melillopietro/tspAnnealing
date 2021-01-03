@@ -6,7 +6,7 @@
 #include <mpi.h>
 #include <string.h>
 
-#define MAX_CITIES 100	      
+#define MAX_CITIES 300	      
 #define START_POINT 4	              
 #define TEMPERATURE 1400000	     
 #define COEFFICIENT 0.99	            
