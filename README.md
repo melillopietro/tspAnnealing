@@ -42,7 +42,8 @@ The simulation can be performed either by a solution of kinetic equations for de
 ## Content
 
 > tsp_MPI (folder)
-
+- machinefile
+- cities
 - tsp_MPI.c 
 - makefile
 - 100.txt 
