@@ -38,6 +38,20 @@ Similar techniques have been independently introduced on several occasions, incl
 This notion of slow cooling implemented in the simulated annealing algorithm is interpreted as a slow decrease in the probability of accepting worse solutions as the solution space is explored. Accepting worse solutions allows for a more extensive search for the global optimal solution. In general, simulated annealing algorithms work as follows. The temperature progressively decreases from an initial positive value to zero. At each time step, the algorithm randomly selects a solution close to the current one, measures its quality, and moves to it according to the temperature-dependent probabilities of selecting better or worse solutions, which during the search respectively remain at 1 (or positive) and decrease towards zero. 
 The simulation can be performed either by a solution of kinetic equations for density functions or by using the stochastic sampling method. The method is an adaptation of the Metropolis–Hastings algorithm, a Monte Carlo method to generate sample states of a thermodynamic system, published by N. Metropolis et al. in 1953.
 
+---
+## Content
+
+> tsp_MPI (folder)
+
+- tsp_MPI.c 
+- makefile
+- 100.txt 
+
+> tsp_SEQUENTIAL (folder)
+
+- tsp_SEQUENTIAL.c 
+- makefile
+- 100.txt
 
 ---
 
