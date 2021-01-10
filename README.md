@@ -128,6 +128,9 @@ The simulation can be performed either by a solution of kinetic equations for de
 - **Generate .clog2**  : `mpecc -mpilog -lpthread –o myexec mysrc.c mpirun [args] ./myexec`
 - **Vievwer .slog** : `https://www.mcs.anl.gov/research/projects/perfvis/software/viewers/index.htm`
 
+### PAPI
+
+mpicc -O0 mysrc.c /usr/local/lib/libpapi.a -o myexec
 
 ---
 
