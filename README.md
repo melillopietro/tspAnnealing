@@ -130,7 +130,7 @@ The simulation can be performed either by a solution of kinetic equations for de
 
 ### PAPI
 
-mpicc -O0 mysrc.c /usr/local/lib/libpapi.a -o myexec
+- **PAPI** : mpicc -O0 tsp_MPI.c /usr/local/lib/libpapi.a -o tsp_MPI -lm
 
 ---
 
