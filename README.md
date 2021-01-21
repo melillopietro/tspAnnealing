@@ -125,7 +125,8 @@ The simulation can be performed either by a solution of kinetic equations for de
 - **Native Infiniband**  : `mpirun --mca btl self,openib [args] ./myexec`
 
 ### MPE
-- **Generate .clog2**  : `mpecc -mpilog -lpthread –o myexec mysrc.c mpirun [args] ./myexec`
+- **Generate .clog2**  : `mpecc -mpilog -lpthread -o tsp_MPI tsp_MPI.c -lm`
+                         `mpirun -np 64 -machinefile machine_file_0123.txt ./tsp_MPI`
 - **Vievwer .slog** : `https://www.mcs.anl.gov/research/projects/perfvis/software/viewers/index.htm`
 
 ### PAPI
